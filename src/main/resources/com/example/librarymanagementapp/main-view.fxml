@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17.0.6"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.librarymanagementapp.MainController">
+    <children>
+        <!-- Menu Bar at the top with MenuItems -->
+        <MenuBar fx:id="menuBar" AnchorPane.leftAnchor="0.0"
+                 AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <menus>
+                <Menu text="Books">
+                    <items>
+                        <MenuItem onAction="#onShowBooks" text="Show Books" />
+                    </items>
+                </Menu>
+                <Menu text="Users">
+                    <items>
+                        <MenuItem onAction="#onShowUsers" text="Show Users" />
+                    </items>
+                </Menu>
+                <Menu text="LoanedBooks">
+                    <items>
+                        <MenuItem onAction="#onShowLoanedBooks" text="Show LoanedBooks" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+
+        <!-- Book Pane -->
+        <AnchorPane fx:id="bookPane"
+                    AnchorPane.leftAnchor="0.0"
+                    AnchorPane.rightAnchor="0.0"
+                    AnchorPane.topAnchor="25.0"
+                    AnchorPane.bottomAnchor="0.0">
+            <!-- Books view content will be loaded here -->
+        </AnchorPane>
+
+        <!-- Users Pane -->
+        <AnchorPane fx:id="usersPane"
+                    AnchorPane.leftAnchor="0.0"
+                    AnchorPane.rightAnchor="0.0"
+                    AnchorPane.topAnchor="25.0"
+                    AnchorPane.bottomAnchor="0.0">
+            <!-- Users view content will be loaded here -->
+        </AnchorPane>
+
+        <!-- Loaned Books Pane -->
+        <AnchorPane fx:id="loanedBooksPane"
+                    AnchorPane.leftAnchor="0.0"
+                    AnchorPane.rightAnchor="0.0"
+                    AnchorPane.topAnchor="25.0"
+                    AnchorPane.bottomAnchor="0.0">
+            <!-- LoanedBooks view content will be loaded here -->
+        </AnchorPane>
+    </children>
+</AnchorPane>
